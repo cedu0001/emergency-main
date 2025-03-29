@@ -1,0 +1,97 @@
+document.querySelector("#headCircle").addEventListener("mouseover", headHighligt);
+document.querySelector("#headCircle").addEventListener("mouseout", headUnHighligt);
+document.querySelector("#headCircle").addEventListener("click", headInfo);
+
+//drage
+document.querySelector("#dragonColor").addEventListener("mouseover", dragonHighligt);
+document.querySelector("#dragonColor").addEventListener("mouseout", dragonUnHighligt);
+document.querySelector("#dragonColor").addEventListener("click", dragonInfo);
+
+//fe
+document.querySelector("#fairyLight").addEventListener("mouseover", fairyHighligt);
+document.querySelector("#fairyLight").addEventListener("mouseout", fairyUnHighligt);
+document.querySelector("#fairyLight").addEventListener("click", fairyInfo);
+
+//mobil
+document.querySelector("#phoneColor").addEventListener("mouseover", phoneHighligt);
+document.querySelector("#phoneColor").addEventListener("mouseout", phoneUnHighligt);
+document.querySelector("#phoneColor").addEventListener("click", phoneInfo);
+
+
+
+function headHighligt(){
+    console.log("headHighlight");
+    document.querySelector("#headCircle").style.fill = "rgb(123, 157, 190)";
+
+}
+
+function headUnHighligt(){
+    console.log("headUnHighlight");
+    document.querySelector("#headCircle").style.fill = "#83898f";
+}
+
+function headInfo(){
+    console.log("headInfo");
+    document.querySelector(".info-text > h2").textContent = "Hovedet!";
+    document.querySelector(".info-text > article > p").textContent = "lorem20";
+}
+
+//drage
+function dragonHighligt(){
+    console.log("dragonHighligt");
+    document.querySelector("#dragonColor").style.fill = "rgb(144, 29, 21)";
+
+}
+
+function dragonUnHighligt(){
+    console.log("dragonUnHighlight");
+    document.querySelector("#dragonColor").style.fill = "#6d6e71";
+}
+
+function dragonInfo(){
+    console.log("dragonInfo");
+    document.querySelector(".info-text > h2").textContent = "Hovedet!";
+    document.querySelector(".info-text > article > p").textContent = "lorem20";
+}
+
+//fe
+function fairyHighligt(){
+    console.log("fairyHighligt");
+    document.querySelector("#fairyLight").style.fill = "rgb(228, 248, 74)";
+
+}
+
+function fairyUnHighligt(){
+    console.log("fairyUnHighlight");
+    document.querySelector("#fairyLight").style.fill = "#efefe9";
+}
+
+function fairyInfo(){
+    console.log("fairyInfo");
+    document.querySelector(".info-text > h2").textContent = "Hovedet!";
+    document.querySelector(".info-text > article > p").textContent = "lorem20";
+}
+
+//mobil
+    function phoneHighligt(){
+        console.log("phoneHighligt");
+        document.querySelector("#phoneColor").style.fill = "rgb(49, 77, 99)";
+    
+    }
+    
+    function phoneUnHighligt(){
+        console.log("phoneUnHighlight");
+        document.querySelector("#phoneColor").style.fill = "#bcbec0";
+    }
+    
+    function phoneInfo(){
+        console.log("phoneInfo");
+        document.querySelector(".info-text > h2").textContent = "Hovedet!";
+        document.querySelector(".info-text > article > p").textContent = "lorem20";
+    }
+
+
+
+    //brug innerhtml til at lave info bokse feks h3, p
+    //done med highlights
+    //to do, cta knapper styling, nyhed border radius, info bokse, github keld video
