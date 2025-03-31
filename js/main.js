@@ -75,7 +75,7 @@ function fairyInfo(){
     console.log("fairyInfo");
     document.querySelector(".info-text > h2").textContent = "Potientielle venner?";
     document.querySelector(".info-text > article > p").textContent = "lorem20";
-    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>hejjjjj</p>"
+    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> hejjjjj"
     document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
 }
 

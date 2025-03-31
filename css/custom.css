@@ -18,7 +18,7 @@
 	/* Borders */
 	--border-color: #007bff; /* used */
 	--border-color-light: #f7f5c2; /* used */
-	--border-radius: 0.25rem;
+	--border-radius: 37px;
 
 	/* Links */
 	--link-color: #84888e; /* used */
@@ -28,10 +28,11 @@
 	/* From styletile */
 
 	/* Fonts */
-	--logotype-font: "Roboto", sans-serif;
-	--headline-font: "Roboto", sans-serif;
-	--body-font: "Roboto", sans-serif;
-	--link-font: "Calibri", sans-serif;
+	--logotype-font: "Rubik-Bold", sans-serif;
+	--headline-font: "Rubik-Bold", sans-serif;
+	--body-font: "Rubik-Regular", sans-serif;
+	--link-font: "Rubik-Regular", sans-serif;
+	--rubik-light-font: "Rubik-Light", sans-serif;
 
 	/* Text sizes */
 	--logotype-size: 48px;
@@ -40,7 +41,7 @@
 	--headline3-size: 32px;
 	--bodytext-size: 20px;
 	--cta-text-size: 20px;
-	--followup-text-size: 20px;
+	--cta-header-text-size: 20px;
 	--form-submit-size: 16px;
 
 	/* Text colors */
@@ -52,7 +53,7 @@
 	--cta-text-color: #fffae2;
 	--cta-text-color-inverted: #bbc3ca;
 	--followup-text-color: #000000;
-	--followup-text-color-inverted: #ffffff;
+	--cta-header-color-inverted: #ffffff;
 	--formfield-text-color: #000000;
 	--form-submit-color: #fffae2;
 	--form-submit-color-inverted: #000000;
@@ -74,8 +75,9 @@
 	--bodytext-bg-color-inverted: #ff00b7;
 	--cta-text-bg-color: #ff00bb;
 	--cta-text-bg-color-inverted: #ff00c8;
+	--cta-nyheder-2-bg: #ffa680;
 	--h-cta-text-bg-color: #fffae2;
-	--followup-text-bg-color: #ffa680;
+	--cta-header-text-bg-color: #86533d; /* cta knapper, de andre to sider */
 	--followup-text-bg-color-inverted: #ff00ff;
 	--form-background-color: #ffffff;
 	--form-text-color: #000000;
@@ -83,6 +85,7 @@
 	--formfield-background-color-active: #ff00e1;
 	--form-submit-bg-color: #ff4b00;
 	--form-submit-bg-color-inverted: #ff00e1;
+	--cta-artikel-bg-color: #ff4b00;
 
 	/* Info-boxes */
 	--info-bg-color-yellow: #fceb94;

@@ -48,6 +48,34 @@ main section {
 	/* border: 1px solid var(--border-color); */
 	border-radius: var(--border-radius);
 }
+
+@font-face {
+	font-family: Rubik-Regular;
+	src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+	font-family: Rubik-Light;
+	src: url(../fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+	font-family: Rubik-Bold;
+	src: url(../fonts/Rubik-Bold.ttf);
+}
+
+p {
+	font-family: var(--body-font);
+	color: var(--logotype-background-color);
+}
+
+#underrubrik {
+	color: var(--headline-color);
+	font-size: var(--headline2-size);
+	font-family: var(--rubik-light-font);
+	margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -68,6 +96,7 @@ h2 {
 }
 h3 {
 	font-size: var(--headline3-size);
+	color: var(--logotype-background-color);
 }
 
 main > h1 {
@@ -112,9 +141,9 @@ a {
 }
 header nav li a {
 	margin: 1.5rem;
-	background-color: var(--followup-text-bg-color);
-	color: var(--followup-text-color);
-	font-size: var(--followup-text-size);
+	background-color: var(--cta-header-text-bg-color);
+	color: var(--cta-header-color-inverted);
+	font-size: var(--cta-header-text-size);
 	padding: 0.5rem 1rem;
 	border-radius: var(--border-radius);
 }

@@ -8,6 +8,14 @@
 	border-radius: var(--border-radius);
 	height: minmax(200px, min-content);
 }
+
+.daily_card img {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .daily_text {
 	display: grid;
 	grid-template-rows: repeat(3, min-content);
@@ -17,7 +25,7 @@
 	background-color: var(--headline-bg-color-inverted);
 	color: var(--headline-color-inverted);
 	padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
-	margin: 0 0 0.5rem 0;
+	margin-top: 40px;
 }
 .daily_text p {
 	padding-right: 2rem;
@@ -31,6 +39,7 @@
 	height: 100%;
 	object-fit: cover;
 }
+
 .news_card {
 	background-color: var(--article-background-color);
 	display: grid;
@@ -60,8 +69,10 @@
 	font-size: var(--headline3-size);
 	text-align: center;
 	line-height: 1rem;
-	padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
-	/* margin: 0 0 1rem 0; */
+	padding-top: 25px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 25px;
 }
 .news_card:first-child {
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -70,16 +81,47 @@
 	border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.news_card .cta_btn {
+.news_card .cta_btn-nyheder-1,
+.cta_btn-nyheder-2 {
 	justify-self: center;
 }
 .cta_btn {
 	display: inline-block;
-	padding: 0.3rem 0.5rem;
-	border: 1px solid var(--border-color);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	border-radius: var(--border-radius);
-	background-color: var(--followup-text-bg-color);
-	color: var(--followup-text-color);
+	background-color: var(--cta-artikel-bg-color);
+	color: var(--cta-text-color);
+	text-align: center;
+	text-decoration: none;
+	width: max-content;
+}
+
+.cta_btn-nyheder-1 {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: var(--border-radius);
+	background-color: var(--header-background-color);
+	color: var(--logotype-background-color);
+	text-align: center;
+	text-decoration: none;
+	width: max-content;
+}
+
+.cta_btn-nyheder-2 {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: var(--border-radius);
+	background-color: var(--cta-nyheder-2-bg);
+	color: var(--logotype-background-color);
 	text-align: center;
 	text-decoration: none;
 	width: max-content;
@@ -87,7 +129,10 @@
 
 .menuItem {
 	display: inline-block;
-	padding: 0.3rem 0.5rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	border-radius: var(--border-radius);
 	background-color: var(--h-cta-text-bg-color);
 	color: var(--followup-text-color);
