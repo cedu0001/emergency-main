@@ -30,16 +30,20 @@
 			<section id="form-section">
 				<article id="form-info">
 					<h2>Parallelt univers helpdesk</h2>
-					<p>Tekst</p>
+					<p>
+						Velkommen til helpdesken, en service der tilbyder dig, som er fanget et eller andet sted, en lille
+						hjælp til hva' enden dit problem kunne være, ved at sende en guide til dig! Du skal blot uddfylde
+						denne formular og så gennemgår vi den hurtigst muligt!
+					</p>
 				</article>
 				<form id="webform">
 					<fieldset id="personlig-info">
 						<legend>Personoplysninger</legend>
-						<div>
+						<section class="form-group">
 							<label for="name">Navn (hvad skal guiden kalde dig?)</label>
 							<input id="name" name="name" type="text" required />
-						</div>
-						<div>
+						</section>
+						<section class="form-group">
 							<label for="hvor-er-du">Hvor er du strandet?</label>
 							<select name="hvor-er-du" id="hvor-er-du" required>
 								<option value="">--Vælg et sted--</option>
@@ -49,12 +53,12 @@
 								<option value="storby">I en storby fyldt med robotter</option>
 								<option value="barda">Barda??</option>
 							</select>
-						</div>
+						</section>
 					</fieldset>
 
 					<fieldset id="dit-problem">
 						<legend>Beskriv dit problem</legend>
-						<div>
+						<section class="form-group">
 							<label for="problem-oplevelse">Hvilket problem oplever du?</label>
 							<select name="problem-dropdown" id="problem-dropdown" required>
 								<option value="">--Vælg det problem der bedst beskriver dit--</option>
@@ -71,8 +75,8 @@
 								</option>
 								<option value="help">HJÆLP! HJÆLP! JEG KAN IKKE KOMME HJEM!</option>
 							</select>
-						</div>
-						<div>
+						</section>
+						<section class="form-group">
 							<label for="problem-fix">Hvad har du allerede prøvet for at løse problemet?</label>
 							<textarea
 								name="problem-fix"
@@ -80,12 +84,12 @@
 								required
 								placeholder="Jeg tog en lur og håbede, det ville gå væk af sig selv. Det gjorde det ikke."
 							></textarea>
-						</div>
+						</section>
 					</fieldset>
 
 					<fieldset id="choose-guide">
 						<legend>Vælg din guide</legend>
-						<div>
+						<section class="form-group">
 							<label for="din-guide">Hvem vil du have som guide?</label>
 							<select name="din-guide" id="din-guide" required>
 								<option value="">--Vælg den guide der passer kan hjælpe dig med dit problem--</option>
@@ -95,15 +99,15 @@
 								<option value="eventyrer">En hyperaktiv eventyrer</option>
 								<option value="advokat">En demonisk advokat</option>
 							</select>
-						</div>
-						<div>
+						</section>
+						<section class="form-group">
 							<label for="patience">Hvor tålmodig er du?</label>
 							<input type="range" name="patience" id="patience" min="0" max="100" required />
-						</div>
+						</section>
 					</fieldset>
-					<fieldset id="etaling">
+					<fieldset id="Betaling">
 						<legend>Betaling</legend>
-						<div>
+						<section class="form-group">
 							<label for="genstand">Hvilken genstand er du villig til at betale med?</label>
 							<select name="genstand" id="genstant" required>
 								<option value="">--Vælg en genstand--</option>
@@ -117,17 +121,27 @@
 								</option>
 								<option value="firstborn">Din førstefødte… nej vent, det er nok for meget</option>
 							</select>
-						</div>
-						<div>
+						</section>
+
+						<section>
 							<label for="ja-nej">Er du ok med magiske bivirkninger?</label>
-							<input type="checkbox" id="ja" name="ja-nej" />
-							<label for="ja-nej">Ja</label>
-							<input type="checkbox" id="nej" name="ja-nej" />
-							<label for="ja-nej">Nej</label>
-						</div>
+							<div class="form-group-flex">
+								<input type="radio" id="ja" name="ja-nej" required />
+								<label for="ja-nej">Ja</label>
+							</div>
+							<div class="form-group-flex">
+								<input type="radio" id="nej" name="ja-nej" required />
+								<label for="ja-nej">Nej</label>
+							</div>
+						</section>
 					</fieldset>
+					<section class="sign-here-section">
+						<label for="sign-here">Skriv under her!</label>
+						<input type="text" id="sign-here" name="sign-here" required />
+
+						<button id="indsend" type="submit">Insend</button>
+					</section>
 				</form>
-				<button id="indsend">Insend</button>
 			</section>
 			<section id="form-summary">
 				<h2>Summary</h2>
