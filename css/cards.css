@@ -128,14 +128,11 @@
 }
 
 .menuItem {
-	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
 	border-radius: var(--border-radius);
-	background-color: var(--h-cta-text-bg-color);
-	color: var(--followup-text-color);
 	text-align: center;
 	text-decoration: none;
 	width: max-content;

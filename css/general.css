@@ -141,11 +141,14 @@ a {
 }
 header nav li a {
 	margin: 1.5rem;
-	background-color: var(--cta-header-text-bg-color);
-	color: var(--cta-header-color-inverted);
+	background-color: var(--h-cta-text-bg-color);
+	color: var(--followup-text-color);
 	font-size: var(--cta-header-text-size);
 	padding: 0.5rem 1rem;
 	border-radius: var(--border-radius);
+	text-align: center;
+	text-decoration: none;
+	width: max-content;
 }
 header > nav li > a:after {
 	content: " \2192";

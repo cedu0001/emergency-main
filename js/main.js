@@ -32,10 +32,14 @@ function headUnHighligt(){
 
 function headInfo(){
     console.log("headInfo");
+
+    animateBoxes();
+
+    
     document.querySelector(".info-text > h2").textContent = "Hvor er du?!";
     document.querySelector(".info-text > article > p").textContent = "lorem20";
-    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>where am i ahh</p>"
-    document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
+    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>where am i ahh</p>";
+    document.querySelector("#requirement").innerHTML = "<h3>test</h3>";
 }
 
 //drage
@@ -52,6 +56,9 @@ function dragonUnHighligt(){
 
 function dragonInfo(){
     console.log("dragonInfo");
+
+    animateBoxes();
+
     document.querySelector(".info-text > h2").textContent = "Fjendtlige skabninger!";
     document.querySelector(".info-text > article > p").textContent = "lorem20";
     document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>rawrr</p>"
@@ -73,6 +80,9 @@ function fairyUnHighligt(){
 
 function fairyInfo(){
     console.log("fairyInfo");
+
+    animateBoxes();
+
     document.querySelector(".info-text > h2").textContent = "Potientielle venner?";
     document.querySelector(".info-text > article > p").textContent = "lorem20";
     document.querySelector("#efficiency").innerHTML = "<h3>test</h3> hejjjjj"
@@ -93,14 +103,28 @@ function fairyInfo(){
     
     function phoneInfo(){
         console.log("phoneInfo");
+
+        animateBoxes();
+
         document.querySelector(".info-text > h2").textContent = "Forsyninger";
         document.querySelector(".info-text > article > p").textContent = "lorem20";
-          document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>i hope insta works lmao</p>"
-    document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
+        document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>i hope insta works lmao</p>"
+        document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
     }
 
 
+function animateBoxes(){
+    document.querySelector("#efficiency").classList.remove("hide");
+    document.querySelector("#efficiency").classList.add("fadeIn");
+    document.querySelector("#requirement").classList.remove("hide");
+    document.querySelector("#requirement").classList.add("fadeIn");
 
-    //brug innerhtml til at lave info bokse feks h3, p
-    //done med highlights,github keld video
-    //to do: cta knapper styling, nyhed border radius, info bokse, 
+    document.querySelector("#requirement").addEventListener("animationend", cleanup);
+}
+
+function cleanup(){
+    console.log("i clean(cleanup)")
+    document.querySelector("#requirement").removeEventListener("animationend", cleanup);
+    document.querySelector("#efficiency").classList.remove("fadeIn");
+    document.querySelector("#requirement").classList.remove("fadeIn");
+}

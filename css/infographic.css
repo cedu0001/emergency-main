@@ -36,3 +36,20 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+.hide {
+	visibility: hidden;
+}
+
+.fadeIn {
+	animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
