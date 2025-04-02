@@ -1,5 +1,38 @@
 #webform {
 	background-color: var(--form-background-color);
+	position: absolute;
+	top: 10%; /* Justér for at placere form korrekt */
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%; /* Tilpas bredde */
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.258); /* Gennemsigtig baggrund */
+	border-radius: 10px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.scroll-container {
+	position: relative;
+	width: 100%;
+	max-width: 800px; /* Tilpas efter behov */
+	margin: 0 auto;
+}
+
+.scroll-image {
+	max-width: 800px;
+
+	display: block;
 }
 
 #form-section,
