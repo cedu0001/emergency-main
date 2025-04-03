@@ -129,3 +129,11 @@ button:hover,
 select:hover {
 	background-color: #5757573a;
 }
+
+#patience {
+	transition: all 1.5s;
+}
+
+input#name {
+	border-color: black;
+}

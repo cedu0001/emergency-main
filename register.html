@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/infographic.css" />
 		<link rel="stylesheet" href="css/forms.css" />
+		<script src="js/form.js" defer></script>
 		<link rel="icon" type="image/png" href="img/fav.png" />
 		<title>Emergency Site</title>
 	</head>
@@ -45,14 +46,22 @@
 						</section>
 						<section class="form-group">
 							<label for="hvor-er-du">Hvor er du strandet?</label>
-							<select name="hvor-er-du" id="hvor-er-du" required>
+							<select name="hvor-er-du" id="hvor-er-du" onchange="visAndetInput()" required>
 								<option value="">--Vælg et sted--</option>
 								<option value="tomrum">I et ukendt tomrum</option>
 								<option value="oerken">Midt i en ørken</option>
 								<option value="skov">I en mørk skov</option>
 								<option value="storby">I en storby fyldt med robotter</option>
 								<option value="barda">Barda??</option>
+								<option value="andet">Andet</option>
 							</select>
+							<input
+								type="text"
+								id="andetInput"
+								placeholder="Skriv din egen mulighed..."
+								style="display: none"
+								required
+							/>
 						</section>
 					</fieldset>
 
@@ -60,7 +69,7 @@
 						<legend>Beskriv dit problem</legend>
 						<section class="form-group">
 							<label for="problem-oplevelse">Hvilket problem oplever du?</label>
-							<select name="problem-dropdown" id="problem-dropdown" required>
+							<select name="problem-dropdown" id="problem-dropdown" onchange="visAndetInput2()" required>
 								<option value="">--Vælg det problem der bedst beskriver dit--</option>
 								<option value="slimklat">
 									Jeg er blevet forvandlet til en slimklat, og det er IKKE fedt.
@@ -74,7 +83,15 @@
 									laver.
 								</option>
 								<option value="help">HJÆLP! HJÆLP! JEG KAN IKKE KOMME HJEM!</option>
+								<option value="andet2">Andet</option>
 							</select>
+							<input
+								type="text"
+								id="andetInput2"
+								placeholder="Skriv din egen mulighed..."
+								style="display: none"
+								required
+							/>
 						</section>
 						<section class="form-group">
 							<label for="problem-fix">Hvad har du allerede prøvet for at løse problemet?</label>
@@ -100,7 +117,7 @@
 								<option value="advokat">En demonisk advokat</option>
 							</select>
 						</section>
-						<section class="form-group">
+						<section class="form-group" id="patience-color">
 							<label for="patience">Hvor tålmodig er du?</label>
 							<div class="form-group-flex-p">
 								<p>Meget tålmodig</p>
@@ -144,7 +161,7 @@
 						<label for="sign-here">Skriv under her!</label>
 						<input type="text" id="sign-here" name="sign-here" required />
 
-						<button id="indsend" type="submit">Insend</button>
+						<button id="indsend" type="submit">Indsend</button>
 					</section>
 				</form>
 			</section>
