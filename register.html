@@ -48,12 +48,12 @@
 							<label for="hvor-er-du">Hvor er du strandet?</label>
 							<select name="hvor-er-du" id="hvor-er-du" onchange="visAndetInput()" required>
 								<option value="">--Vælg et sted--</option>
-								<option value="tomrum">I et ukendt tomrum</option>
-								<option value="oerken">Midt i en ørken</option>
-								<option value="skov">I en mørk skov</option>
-								<option value="storby">I en storby fyldt med robotter</option>
-								<option value="barda">Barda??</option>
-								<option value="andet">Andet</option>
+								<option value="Ukendt tomrum">I et ukendt tomrum</option>
+								<option value="Ørken">Midt i en ørken</option>
+								<option value="Mørk skov">I en mørk skov</option>
+								<option value="Storby">I en storby fyldt med robotter</option>
+								<option value="Barda">Barda??</option>
+								<option value="Andet">Andet</option>
 							</select>
 							<input
 								type="text"
@@ -124,7 +124,8 @@
 								<p>HJÆLP MIG NU!!!</p>
 							</div>
 
-							<input type="range" name="patience" id="patience" min="0" max="100" required />
+							<input type="range" name="patience" id="patience" min="0" max="100" value="0" required />
+							<span id="patienceValue"></span>
 						</section>
 					</fieldset>
 					<fieldset id="betaling">
@@ -149,11 +150,11 @@
 							<label for="ja-nej">Er du ok med magiske bivirkninger?</label>
 							<div class="form-group-flex-p">
 								<label for="ja-nej">Ja</label>
-								<input type="radio" id="ja" name="ja-nej" required />
+								<input type="radio" id="ja" name="ja-nej" value="Ja" required />
 							</div>
 							<div class="form-group-flex-p">
 								<label for="ja-nej">Nej</label>
-								<input type="radio" id="nej" name="ja-nej" required />
+								<input type="radio" id="nej" name="ja-nej" value="Nej" required />
 							</div>
 						</section>
 					</fieldset>
@@ -167,8 +168,44 @@
 			</section>
 			<section id="form-summary">
 				<h2>Summary</h2>
-				<article>
-					<p class="placeholder">Opsummering</p>
+				<article id="sum">
+					<div>
+						<h3>Navn</h3>
+						<p id="sumName"></p>
+					</div>
+					<div>
+						<h3>Hvor er du strandet?</h3>
+						<p id="sumHvor-er-du"></p>
+					</div>
+					<div>
+						<h3>Hvilket problem oplever du?</h3>
+						<p id="sumProblem-dropdown"></p>
+					</div>
+					<div>
+						<h3>Hvad har du allerede prøvet for at løse problemet?</h3>
+						<p id="sumProblem-fix"></p>
+					</div>
+					<div>
+						<h3>Hvem vil du have som guide?</h3>
+						<p id="sumDin-guide"></p>
+					</div>
+					<div>
+						<h3>Hvor tålmodig er du?</h3>
+						<p id="sumPatience"></p>
+					</div>
+					<div>
+						<h3>Hvilken genstand er du villig til at betale med?</h3>
+						<p id="sumGenstand"></p>
+					</div>
+					<div>
+						<h3>Er du ok med magiske bivirkninger?</h3>
+						<p id="sumJANEJ"></p>
+					</div>
+
+					<form>
+						<button id="reset-btn" type="reset">Godkend</button>
+					</form>
+					<!-- <p class="placeholder">Opsummering</p> -->
 				</article>
 			</section>
 		</main>

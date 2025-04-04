@@ -134,6 +134,8 @@ select:hover {
 	transition: all 1.5s;
 }
 
-input#name {
-	border-color: black;
+#sum div {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	gap: 1rem;
 }
